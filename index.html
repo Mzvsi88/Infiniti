@@ -3,666 +3,1478 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Infiniti — Banking Without Limits</title>
-    <meta name="description"
+
+    <meta
+        name="description"
         content="Infiniti is a modern digital banking platform designed around simplicity, security and smarter financial management.">
+
     <meta name="theme-color" content="#07111f">
-    <!-- Google Font -->
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
     <!-- Main stylesheet -->
     <link rel="stylesheet" href="style.css">
-        
-        <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+    <!-- Supabase -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 </head>
+
 <body>
-    <!-- =========================
-         HEADER
-    ========================== -->
-    <header class="site-header" id="header">
-        <div class="container nav-container">
-            <a href="#home" class="logo">
-                <span class="logo-symbol">∞</span>
-                <span class="logo-text">infiniti</span>
+
+<!-- =========================
+     HEADER
+========================== -->
+
+<header class="site-header" id="header">
+
+    <div class="container nav-container">
+
+        <a href="#home" class="logo">
+            <span class="logo-symbol">∞</span>
+            <span class="logo-text">infiniti</span>
+        </a>
+
+        <nav class="main-nav" id="mainNav">
+
+            <a href="#home" class="nav-link active">Home</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#services" class="nav-link">Services</a>
+            <a href="#cards" class="nav-link">Cards</a>
+            <a href="#security" class="nav-link">Security</a>
+            <a href="#contact" class="nav-link">Contact</a>
+
+        </nav>
+
+        <div class="nav-actions">
+
+            <a href="#login" class="login-link">
+                Sign in
             </a>
-            <nav class="main-nav" id="mainNav">
-                <a href="#home" class="nav-link active">Home</a>
-                <a href="#about" class="nav-link">About</a>
-                <a href="#services" class="nav-link">Services</a>
-                <a href="#cards" class="nav-link">Cards</a>
-                <a href="#security" class="nav-link">Security</a>
-                <a href="#contact" class="nav-link">Contact</a>
-            </nav>
-            <div class="nav-actions">
-                <a href="#login" class="login-link">
+
+            <a href="#signup" class="btn btn-primary">
+                Open account
+            </a>
+
+        </div>
+
+        <button
+            class="menu-toggle"
+            id="menuToggle"
+            aria-label="Open navigation menu"
+            aria-expanded="false">
+
+            <span></span>
+            <span></span>
+            <span></span>
+
+        </button>
+
+    </div>
+
+</header>
+
+
+<main>
+
+<!-- =========================
+     HERO
+========================== -->
+
+<section class="hero" id="home">
+
+    <div class="hero-background"></div>
+
+    <div class="container hero-container">
+
+        <div class="hero-content">
+
+            <div class="eyebrow">
+
+                <span class="status-dot"></span>
+
+                Banking, reimagined
+
+            </div>
+
+            <h1>
+
+                Your money.
+                <span>Your future.</span>
+                Without limits.
+
+            </h1>
+
+            <p class="hero-description">
+
+                Experience a smarter way to manage your money.
+                Infiniti brings everyday banking, powerful tools
+                and modern financial technology together in one place.
+
+            </p>
+
+            <div class="hero-actions">
+
+                <a
+                    href="#signup"
+                    class="btn btn-primary btn-large">
+
+                    Get started
+
+                    <span>→</span>
+
+                </a>
+
+                <a
+                    href="#about"
+                    class="btn btn-outline btn-large">
+
+                    Explore Infiniti
+
+                </a>
+
+            </div>
+
+            <div class="hero-trust">
+
+                <div class="trust-avatars">
+
+                    <span>IN</span>
+                    <span>IF</span>
+                    <span>∞</span>
+
+                </div>
+
+                <div>
+
+                    <strong>
+                        Built for the next generation
+                    </strong>
+
+                    <small>
+                        Simple. Secure. Intelligent.
+                    </small>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- HERO ACCOUNT CARD -->
+
+        <div class="hero-visual">
+
+            <div class="floating-card card-top">
+
+                <span class="mini-label">
+                    Available balance
+                </span>
+
+                <strong>
+                    ₦2,840,500.00
+                </strong>
+
+                <small>
+                    +12.8% this month
+                </small>
+
+            </div>
+
+
+            <div class="bank-card">
+
+                <div class="card-top-row">
+
+                    <span class="card-brand">
+                        infiniti
+                    </span>
+
+                    <span class="card-chip"></span>
+
+                </div>
+
+                <div class="card-number">
+
+                    4829&nbsp;&nbsp; 7314&nbsp;&nbsp; 9021&nbsp;&nbsp; 4826
+
+                </div>
+
+                <div class="card-bottom-row">
+
+                    <div>
+
+                        <small>
+                            CARD HOLDER
+                        </small>
+
+                        <strong>
+                            INFINITI MEMBER
+                        </strong>
+
+                    </div>
+
+                    <div>
+
+                        <small>
+                            VALID THRU
+                        </small>
+
+                        <strong>
+                            12/29
+                        </strong>
+
+                    </div>
+
+                    <div class="visa-style">
+
+                        <span>V</span>
+                        <span>I</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="floating-card card-bottom">
+
+                <div class="transaction-icon">
+                    ↗
+                </div>
+
+                <div>
+
+                    <span class="mini-label">
+                        Recent transfer
+                    </span>
+
+                    <strong>
+                        ₦125,000
+                    </strong>
+
+                    <small>
+                        Completed just now
+                    </small>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     TRUST BAR
+========================== -->
+
+<section class="trust-bar">
+
+    <div class="container trust-container">
+
+        <p>
+            Designed for modern financial life
+        </p>
+
+        <div class="trust-items">
+
+            <span>PERSONAL</span>
+            <span>BUSINESS</span>
+            <span>GLOBAL</span>
+            <span>SECURE</span>
+            <span>SMART</span>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     ABOUT
+========================== -->
+
+<section
+    class="section about-section"
+    id="about">
+
+    <div class="container two-column">
+
+        <div class="section-heading">
+
+            <span class="section-tag">
+                WHY INFINITI
+            </span>
+
+            <h2>
+
+                Banking should work
+                <span>around you.</span>
+
+            </h2>
+
+        </div>
+
+        <div class="section-copy">
+
+            <p>
+
+                Infiniti is designed around the way people actually
+                live, work and move money. From everyday payments to
+                long-term financial planning, everything is designed
+                to feel simple and connected.
+
+            </p>
+
+            <a
+                href="#services"
+                class="text-link">
+
+                Discover what we offer →
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     SERVICES
+========================== -->
+
+<section
+    class="section services-section"
+    id="services">
+
+    <div class="container">
+
+        <div class="section-header-center">
+
+            <span class="section-tag">
+                ONE PLATFORM
+            </span>
+
+            <h2>
+
+                Everything you need.
+                <span>Nothing you don't.</span>
+
+            </h2>
+
+            <p>
+
+                Powerful financial tools brought together
+                in one beautifully simple experience.
+
+            </p>
+
+        </div>
+
+
+        <div class="services-grid">
+
+            <article class="service-card service-featured">
+
+                <div class="service-icon">
+                    ◈
+                </div>
+
+                <span class="service-number">
+                    01
+                </span>
+
+                <h3>
+                    Smart accounts
+                </h3>
+
+                <p>
+
+                    Keep your everyday finances organized with
+                    intuitive accounts designed around your goals.
+
+                </p>
+
+                <a
+                    href="#signup"
+                    class="service-link">
+
+                    Learn more →
+
+                </a>
+
+            </article>
+
+
+            <article class="service-card">
+
+                <div class="service-icon">
+                    ↗
+                </div>
+
+                <span class="service-number">
+                    02
+                </span>
+
+                <h3>
+                    Fast transfers
+                </h3>
+
+                <p>
+
+                    Move money quickly and keep track of every
+                    transaction from one central dashboard.
+
+                </p>
+
+                <a
+                    href="#signup"
+                    class="service-link">
+
+                    Learn more →
+
+                </a>
+
+            </article>
+
+
+            <article class="service-card">
+
+                <div class="service-icon">
+                    ◉
+                </div>
+
+                <span class="service-number">
+                    03
+                </span>
+
+                <h3>
+                    Digital cards
+                </h3>
+
+                <p>
+
+                    Manage your cards digitally and stay in control
+                    wherever you go.
+
+                </p>
+
+                <a
+                    href="#cards"
+                    class="service-link">
+
+                    Explore cards →
+
+                </a>
+
+            </article>
+
+
+            <article class="service-card">
+
+                <div class="service-icon">
+                    ⌁
+                </div>
+
+                <span class="service-number">
+                    04
+                </span>
+
+                <h3>
+                    Financial insights
+                </h3>
+
+                <p>
+
+                    Understand your spending and make smarter
+                    decisions with clear financial insights.
+
+                </p>
+
+                <a
+                    href="#signup"
+                    class="service-link">
+
+                    Learn more →
+
+                </a>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     DASHBOARD PREVIEW
+========================== -->
+
+<section class="section dashboard-section">
+
+    <div class="container dashboard-container">
+
+        <div class="dashboard-copy">
+
+            <span class="section-tag">
+                YOUR MONEY, YOUR VIEW
+            </span>
+
+            <h2>
+
+                A clearer picture
+                <span>of your finances.</span>
+
+            </h2>
+
+            <p>
+
+                See your balances, activity and spending patterns
+                in one clean dashboard. Stay informed without
+                digging through complicated menus.
+
+            </p>
+
+            <ul class="feature-list">
+
+                <li>
+                    <span>✓</span>
+                    Real-time account overview
+                </li>
+
+                <li>
+                    <span>✓</span>
+                    Easy transaction tracking
+                </li>
+
+                <li>
+                    <span>✓</span>
+                    Personalized financial insights
+                </li>
+
+                <li>
+                    <span>✓</span>
+                    Mobile-first experience
+                </li>
+
+            </ul>
+
+            <a
+                href="#signup"
+                class="btn btn-primary">
+
+                Create your account
+
+            </a>
+
+        </div>
+
+
+        <div class="dashboard-preview">
+
+            <div class="dashboard-window">
+
+                <div class="dashboard-top">
+
+                    <div>
+
+                        <small>
+                            Total balance
+                        </small>
+
+                        <strong>
+                            ₦4,280,750.40
+                        </strong>
+
+                    </div>
+
+                    <div class="profile-circle">
+                        I
+                    </div>
+
+                </div>
+
+
+                <div class="chart-area">
+
+                    <div class="chart-label">
+
+                        <span>
+                            Spending overview
+                        </span>
+
+                        <span>
+                            This month
+                        </span>
+
+                    </div>
+
+
+                    <div class="fake-chart">
+
+                        <div class="chart-line"></div>
+
+                        <span class="chart-point p1"></span>
+                        <span class="chart-point p2"></span>
+                        <span class="chart-point p3"></span>
+                        <span class="chart-point p4"></span>
+                        <span class="chart-point p5"></span>
+
+                    </div>
+
+
+                    <div class="chart-months">
+
+                        <span>Jun</span>
+                        <span>Jul</span>
+                        <span>Aug</span>
+                        <span>Sep</span>
+                        <span>Oct</span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="dashboard-transactions">
+
+                    <div class="transaction-row">
+
+                        <div class="transaction-avatar">
+                            A
+                        </div>
+
+                        <div class="transaction-info">
+
+                            <strong>
+                                Transfer received
+                            </strong>
+
+                            <small>
+                                Today, 10:24 AM
+                            </small>
+
+                        </div>
+
+                        <strong class="amount positive">
+                            +₦85,000
+                        </strong>
+
+                    </div>
+
+
+                    <div class="transaction-row">
+
+                        <div class="transaction-avatar">
+                            S
+                        </div>
+
+                        <div class="transaction-info">
+
+                            <strong>
+                                Shopping
+                            </strong>
+
+                            <small>
+                                Yesterday, 4:18 PM
+                            </small>
+
+                        </div>
+
+                        <strong class="amount">
+                            -₦42,500
+                        </strong>
+
+                    </div>
+
+
+                    <div class="transaction-row">
+
+                        <div class="transaction-avatar">
+                            N
+                        </div>
+
+                        <div class="transaction-info">
+
+                            <strong>
+                                Subscription
+                            </strong>
+
+                            <small>
+                                Sep 28, 8:40 AM
+                            </small>
+
+                        </div>
+
+                        <strong class="amount">
+                            -₦8,500
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     CARDS
+========================== -->
+
+<section
+    class="section cards-section"
+    id="cards">
+
+    <div class="container cards-container">
+
+        <div class="cards-visual">
+
+            <div class="premium-card">
+
+                <div class="premium-card-top">
+
+                    <span>
+                        infiniti
+                    </span>
+
+                    <span class="card-chip"></span>
+
+                </div>
+
+                <div class="premium-number">
+
+                    4829&nbsp; 7314&nbsp; 9021&nbsp; 4826
+
+                </div>
+
+                <div class="premium-bottom">
+
+                    <span>
+                        INFINITI MEMBER
+                    </span>
+
+                    <span>
+                        VISA
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="cards-content">
+
+            <span class="section-tag">
+                INFINITI CARDS
+            </span>
+
+            <h2>
+
+                One card.
+                <span>More possibilities.</span>
+
+            </h2>
+
+            <p>
+
+                A modern card experience designed to give you
+                greater control over everyday spending.
+
+            </p>
+
+
+            <div class="card-features">
+
+                <div>
+
+                    <strong>01</strong>
+                    <span>Easy card management</span>
+
+                </div>
+
+                <div>
+
+                    <strong>02</strong>
+                    <span>Instant transaction alerts</span>
+
+                </div>
+
+                <div>
+
+                    <strong>03</strong>
+                    <span>Secure digital controls</span>
+
+                </div>
+
+            </div>
+
+
+            <a
+                href="#signup"
+                class="btn btn-light">
+
+                Get an Infiniti card
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     SECURITY
+========================== -->
+
+<section
+    class="section security-section"
+    id="security">
+
+    <div class="container">
+
+        <div class="security-header">
+
+            <span class="section-tag">
+                SECURITY FIRST
+            </span>
+
+            <h2>
+
+                Your money deserves
+                <span>serious protection.</span>
+
+            </h2>
+
+            <p>
+
+                Security is built into every part of the Infiniti
+                experience.
+
+            </p>
+
+        </div>
+
+
+        <div class="security-grid">
+
+            <article class="security-card">
+
+                <div class="security-icon">
+                    ◉
+                </div>
+
+                <h3>
+                    Secure access
+                </h3>
+
+                <p>
+
+                    Modern authentication tools help protect
+                    access to your account.
+
+                </p>
+
+            </article>
+
+
+            <article class="security-card">
+
+                <div class="security-icon">
+                    ⌁
+                </div>
+
+                <h3>
+                    Protected activity
+                </h3>
+
+                <p>
+
+                    Keep an eye on account activity and
+                    receive important alerts.
+
+                </p>
+
+            </article>
+
+
+            <article class="security-card">
+
+                <div class="security-icon">
+                    ◇
+                </div>
+
+                <h3>
+                    Privacy by design
+                </h3>
+
+                <p>
+
+                    Your financial information is treated with
+                    privacy and security in mind.
+
+                </p>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     STATS
+========================== -->
+
+<section class="stats-section">
+
+    <div class="container stats-grid">
+
+        <div class="stat">
+
+            <strong>
+                24/7
+            </strong>
+
+            <span>
+                Digital access
+            </span>
+
+        </div>
+
+
+        <div class="stat">
+
+            <strong>
+                ∞
+            </strong>
+
+            <span>
+                Possibilities
+            </span>
+
+        </div>
+
+
+        <div class="stat">
+
+            <strong>
+                1
+            </strong>
+
+            <span>
+                Simple platform
+            </span>
+
+        </div>
+
+
+        <div class="stat">
+
+            <strong>
+                100%
+            </strong>
+
+            <span>
+                Designed around you
+            </span>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     SIGN UP
+========================== -->
+
+<section
+    class="section cta-section"
+    id="signup">
+
+    <div class="container cta-container">
+
+        <div class="cta-content">
+
+            <span class="section-tag">
+                START TODAY
+            </span>
+
+            <h2>
+
+                Your next financial chapter
+                <span>starts here.</span>
+
+            </h2>
+
+            <p>
+
+                Create your Infiniti account and get started
+                with the Infiniti experience.
+
+            </p>
+
+        </div>
+
+
+        <form
+            class="login-form"
+            id="signupForm">
+
+            <div class="form-group">
+
+                <label for="signupName">
+                    Full name
+                </label>
+
+                <input
+                    type="text"
+                    id="signupName"
+                    name="full_name"
+                    placeholder="Your full name"
+                    autocomplete="name"
+                    required>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="signupEmail">
+                    Email address
+                </label>
+
+                <input
+                    type="email"
+                    id="signupEmail"
+                    name="email"
+                    placeholder="you@example.com"
+                    autocomplete="email"
+                    required>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="signupPassword">
+                    Password
+                </label>
+
+                <input
+                    type="password"
+                    id="signupPassword"
+                    name="password"
+                    placeholder="Create a password"
+                    autocomplete="new-password"
+                    minlength="6"
+                    required>
+
+            </div>
+
+
+            <button
+                type="submit"
+                class="btn btn-primary btn-full">
+
+                Create account
+
+            </button>
+
+
+            <p style="margin-top: 18px;">
+
+                Already have an account?
+
+                <a href="#login">
                     Sign in
                 </a>
-                <a href="#signup" class="btn btn-primary">
-                    Open account
-                </a>
-            </div>
-            <button
-                class="menu-toggle"
-                id="menuToggle"
-                aria-label="Open navigation menu"
-                aria-expanded="false">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
-    </header>
-    <main>
-        <!-- =========================
-             HERO
-        ========================== -->
-        <section class="hero" id="home">
-            <div class="hero-background"></div>
-            <div class="container hero-container">
-                <div class="hero-content">
-                    <div class="eyebrow">
-                        <span class="status-dot"></span>
-                        Banking, reimagined
-                    </div>
-                    <h1>
-                        Your money.
-                        <span>Your future.</span>
-                        Without limits.
-                    </h1>
-                    <p class="hero-description">
-                        Experience a smarter way to manage your money.
-                        Infiniti brings everyday banking, powerful tools
-                        and modern financial technology together in one place.
-                    </p>
-                    <div class="hero-actions">
-                        <a href="#signup" class="btn btn-primary btn-large">
-                            Get started
-                            <span>→</span>
-                        </a>
-                        <a href="#about" class="btn btn-outline btn-large">
-                            Explore Infiniti
-                        </a>
-                    </div>
-                    <div class="hero-trust">
-                        <div class="trust-avatars">
-                            <span>IN</span>
-                            <span>IF</span>
-                            <span>∞</span>
-                        </div>
-                        <div>
-                            <strong>Built for the next generation</strong>
-                            <small>Simple. Secure. Intelligent.</small>
-                        </div>
-                    </div>
-                </div>
-                <!-- HERO ACCOUNT CARD -->
-                <div class="hero-visual">
-                    <div class="floating-card card-top">
-                        <span class="mini-label">Available balance</span>
-                        <strong>₦2,840,500.00</strong>
-                        <small>+12.8% this month</small>
-                    </div>
-                    <div class="bank-card">
-                        <div class="card-top-row">
-                            <span class="card-brand">infiniti</span>
-                            <span class="card-chip"></span>
-                        </div>
-                        <div class="card-number">
-                            4829&nbsp;&nbsp; 7314&nbsp;&nbsp; 9021&nbsp;&nbsp; 4826
-                        </div>
-                        <div class="card-bottom-row">
-                            <div>
-                                <small>CARD HOLDER</small>
-                                <strong>INFINITI MEMBER</strong>
-                            </div>
-                            <div>
-                                <small>VALID THRU</small>
-                                <strong>12/29</strong>
-                            </div>
-                            <div class="visa-style">
-                                <span>V</span>
-                                <span>I</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="floating-card card-bottom">
-                        <div class="transaction-icon">↗</div>
-                        <div>
-                            <span class="mini-label">Recent transfer</span>
-                            <strong>₦125,000</strong>
-                            <small>Completed just now</small>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- =========================
-             TRUST BAR
-        ========================== -->
-        <section class="trust-bar">
-            <div class="container trust-container">
-                <p>Designed for modern financial life</p>
-                <div class="trust-items">
-                    <span>PERSONAL</span>
-                    <span>BUSINESS</span>
-                    <span>GLOBAL</span>
-                    <span>SECURE</span>
-                    <span>SMART</span>
-                </div>
-            </div>
-        </section>
-        <!-- =========================
-             ABOUT
-        ========================== -->
-        <section class="section about-section" id="about">
-            <div class="container two-column">
-                <div class="section-heading">
-                    <span class="section-tag">WHY INFINITI</span>
-                    <h2>
-                        Banking should work
-                        <span>around you.</span>
-                    </h2>
-                </div>
-                <div class="section-copy">
-                    <p>
-                        Infiniti is designed around the way people actually
-                        live, work and move money. From everyday payments to
-                        long-term financial planning, everything is designed
-                        to feel simple and connected.
-                    </p>
-                    <a href="#services" class="text-link">
-                        Discover what we offer →
-                    </a>
-                </div>
-            </div>
-        </section>
-        <!-- =========================
-             SERVICES
-        ========================== -->
-        <section class="section services-section" id="services">
-            <div class="container">
-                <div class="section-header-center">
-                    <span class="section-tag">ONE PLATFORM</span>
-                    <h2>
-                        Everything you need.
-                        <span>Nothing you don't.</span>
-                    </h2>
-                    <p>
-                        Powerful financial tools brought together
-                        in one beautifully simple experience.
-                    </p>
-                </div>
-                <div class="services-grid">
-                    <article class="service-card service-featured">
-                        <div class="service-icon">◈</div>
-                        <span class="service-number">01</span>
-                        <h3>Smart accounts</h3>
-                        <p>
-                            Keep your everyday finances organized with
-                            intuitive accounts designed around your goals.
-                        </p>
-                        <a href="#signup" class="service-link">
-                            Learn more →
-                        </a>
-                    </article>
-                    <article class="service-card">
-                        <div class="service-icon">↗</div>
-                        <span class="service-number">02</span>
-                        <h3>Fast transfers</h3>
-                        <p>
-                            Move money quickly and keep track of every
-                            transaction from one central dashboard.
-                        </p>
-                        <a href="#signup" class="service-link">
-                            Learn more →
-                        </a>
-                    </article>
-                    <article class="service-card">
-                        <div class="service-icon">◉</div>
-                        <span class="service-number">03</span>
-                        <h3>Digital cards</h3>
-                        <p>
-                            Manage your cards digitally and stay in control
-                            wherever you go.
-                        </p>
-                        <a href="#cards" class="service-link">
-                            Explore cards →
-                        </a>
-                    </article>
-                    <article class="service-card">
-                        <div class="service-icon">⌁</div>
-                        <span class="service-number">04</span>
-                        <h3>Financial insights</h3>
-                        <p>
-                            Understand your spending and make smarter
-                            decisions with clear financial insights.
-                        </p>
-                        <a href="#signup" class="service-link">
-                            Learn more →
-                        </a>
-                    </article>
-                </div>
-            </div>
-        </section>
-        <!-- =========================
-             DASHBOARD PREVIEW
-        ========================== -->
-        <section class="section dashboard-section">
-            <div class="container dashboard-container">
-                <div class="dashboard-copy">
-                    <span class="section-tag">YOUR MONEY, YOUR VIEW</span>
-                    <h2>
-                        A clearer picture
-                        <span>of your finances.</span>
-                    </h2>
-                    <p>
-                        See your balances, activity and spending patterns
-                        in one clean dashboard. Stay informed without
-                        digging through complicated menus.
-                    </p>
-                    <ul class="feature-list">
-                        <li>
-                            <span>✓</span>
-                            Real-time account overview
-                        </li>
-                        <li>
-                            <span>✓</span>
-                            Easy transaction tracking
-                        </li>
-                        <li>
-                            <span>✓</span>
-                            Personalized financial insights
-                        </li>
-                        <li>
-                            <span>✓</span>
-                            Mobile-first experience
-                        </li>
-                    </ul>
-                    <a href="#signup" class="btn btn-primary">
-                        Create your account
-                    </a>
-                </div>
-                <div class="dashboard-preview">
-                    <div class="dashboard-window">
-                        <div class="dashboard-top">
-                            <div>
-                                <small>Total balance</small>
-                                <strong>₦4,280,750.40</strong>
-                            </div>
-                            <div class="profile-circle">
-                                I
-                            </div>
-                        </div>
-                        <div class="chart-area">
-                            <div class="chart-label">
-                                <span>Spending overview</span>
-                                <span>This month</span>
-                            </div>
-                            <div class="fake-chart">
-                                <div class="chart-line"></div>
-                                <span class="chart-point p1"></span>
-                                <span class="chart-point p2"></span>
-                                <span class="chart-point p3"></span>
-                                <span class="chart-point p4"></span>
-                                <span class="chart-point p5"></span>
-                            </div>
-                            <div class="chart-months">
-                                <span>Jun</span>
-                                <span>Jul</span>
-                                <span>Aug</span>
-                                <span>Sep</span>
-                                <span>Oct</span>
-                            </div>
-                        </div>
-                        <div class="dashboard-transactions">
-                            <div class="transaction-row">
-                                <div class="transaction-avatar">
-                                    A
-                                </div>
-                                <div class="transaction-info">
-                                    <strong>Transfer received</strong>
-                                    <small>Today, 10:24 AM</small>
-                                </div>
-                                <strong class="amount positive">
-                                    +₦85,000
-                                </strong>
-                            </div>
-                            <div class="transaction-row">
-                                <div class="transaction-avatar">
-                                    S
-                                </div>
-                                <div class="transaction-info">
-                                    <strong>Shopping</strong>
-                                    <small>Yesterday, 4:18 PM</small>
-                                </div>
-                                <strong class="amount">
-                                    -₦42,500
-                                </strong>
-                            </div>
-                            <div class="transaction-row">
-                                <div class="transaction-avatar">
-                                    N
-                                </div>
-                                <div class="transaction-info">
-                                    <strong>Subscription</strong>
-                                    <small>Sep 28, 8:40 AM</small>
-                                </div>
-                                <strong class="amount">
-                                    -₦8,500
-                                </strong>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- =========================
-             CARDS
-        ========================== -->
-        <section class="section cards-section" id="cards">
-            <div class="container cards-container">
-                <div class="cards-visual">
-                    <div class="premium-card">
-                        <div class="premium-card-top">
-                            <span>infiniti</span>
-                            <span class="card-chip"></span>
-                        </div>
-                        <div class="premium-number">
-                            4829&nbsp; 7314&nbsp; 9021&nbsp; 4826
-                        </div>
-                        <div class="premium-bottom">
-                            <span>INFINITI MEMBER</span>
-                            <span>VISA</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="cards-content">
-                    <span class="section-tag">INFINITI CARDS</span>
-                    <h2>
-                        One card.
-                        <span>More possibilities.</span>
-                    </h2>
-                    <p>
-                        A modern card experience designed to give you
-                        greater control over everyday spending.
-                    </p>
-                    <div class="card-features">
-                        <div>
-                            <strong>01</strong>
-                            <span>Easy card management</span>
-                        </div>
-                        <div>
-                            <strong>02</strong>
-                            <span>Instant transaction alerts</span>
-                        </div>
-                        <div>
-                            <strong>03</strong>
-                            <span>Secure digital controls</span>
-                        </div>
-                    </div>
-                    <a href="#signup" class="btn btn-light">
-                        Get an Infiniti card
-                    </a>
-                </div>
-            </div>
-        </section>
-        <!-- =========================
-             SECURITY
-        ========================== -->
-        <section class="section security-section" id="security">
-            <div class="container">
-                <div class="security-header">
-                    <span class="section-tag">SECURITY FIRST</span>
-                    <h2>
-                        Your money deserves
-                        <span>serious protection.</span>
-                    </h2>
-                    <p>
-                        Security is built into every part of the Infiniti
-                        experience.
-                    </p>
-                </div>
-                <div class="security-grid">
-                    <article class="security-card">
-                        <div class="security-icon">◉</div>
-                        <h3>Secure access</h3>
-                        <p>
-                            Modern authentication tools help protect
-                            access to your account.
-                        </p>
-                    </article>
-                    <article class="security-card">
-                        <div class="security-icon">⌁</div>
-                        <h3>Protected activity</h3>
-                        <p>
-                            Keep an eye on account activity and
-                            receive important alerts.
-                        </p>
-                    </article>
-                    <article class="security-card">
-                        <div class="security-icon">◇</div>
-                        <h3>Privacy by design</h3>
-                        <p>
-                            Your financial information is treated with
-                            privacy and security in mind.
-                        </p>
-                    </article>
-                </div>
-            </div>
-        </section>
-        <!-- =========================
-             STATS
-        ========================== -->
-        <section class="stats-section">
-            <div class="container stats-grid">
-                <div class="stat">
-                    <strong>24/7</strong>
-                    <span>Digital access</span>
-                </div>
-                <div class="stat">
-                    <strong>∞</strong>
-                    <span>Possibilities</span>
-                </div>
-                <div class="stat">
-                    <strong>1</strong>
-                    <span>Simple platform</span>
-                </div>
-                <div class="stat">
-                    <strong>100%</strong>
-                    <span>Designed around you</span>
-                </div>
-            </div>
-        </section>
-        <!-- =========================
-             CTA
-        ========================== -->
-        <section class="section cta-section" id="signup">
-            <div class="container cta-container">
-                <div class="cta-content">
-                    <span class="section-tag">START TODAY</span>
-                    <h2>
-                        Your next financial chapter
-                        <span>starts here.</span>
-                    </h2>
-                    <p>
-                        Join the Infiniti experience and discover
-                        a simpler way to manage your money.
-                    </p>
-                    <div class="cta-actions">
-                        <a href="#login" class="btn btn-primary btn-large">
-                            Create an account
-                        </a>
-                        <a href="#contact" class="text-link light-link">
-                            Talk to us →
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- =========================
-             LOGIN SECTION
-        ========================== -->
-        <section class="login-section" id="login">
-            <div class="container login-container">
-                <div class="login-info">
-                    <span class="section-tag">INFINITI ACCESS</span>
-                    <h2>
-                        Welcome back.
-                    </h2>
-                    <p>
-                        Sign in to your Infiniti account to continue.
-                    </p>
-                </div>
-                <form class="login-form" id="loginForm">
-                    <div class="form-group">
-                        <label for="email">
-                            Email address
-                        </label>
-                        <input
-                            type="email"
-                            id="email"
-                            name="email"
-                            placeholder="you@example.com"
-                            autocomplete="email"
-                            required>
-                    </div>
-                    <div class="form-group">
-                        <label for="password">
-                            Password
-                        </label>
-                        <input
-                            type="password"
-                            id="password"
-                            name="password"
-                            placeholder="Enter your password"
-                            autocomplete="current-password"
-                            required>
-                    </div>
-                    <div class="form-options">
-                        <label class="checkbox-label">
-                            <input type="checkbox" name="remember">
-                            <span>Remember me</span>
-                        </label>
-                        <a href="#forgot-password">
-                            Forgot password?
-                        </a>
-                    </div>
-                    <button
-                        type="submit"
-                        class="btn btn-primary btn-full">
-                        Sign in
-                    </button>
-                </form>
-            </div>
-        </section>
-        <!-- =========================
-             CONTACT
-        ========================== -->
-        <section class="section contact-section" id="contact">
-            <div class="container contact-container">
-                <div class="contact-content">
-                    <span class="section-tag">GET IN TOUCH</span>
-                    <h2>
-                        We're here
-                        <span>when you need us.</span>
-                    </h2>
-                    <p>
-                        Have a question about Infiniti? Send us a message
-                        and our team will be happy to help.
-                    </p>
-                </div>
-                <form class="contact-form" id="contactForm">
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="name">
-                                Name
-                            </label>
-                            <input
-                                type="text"
-                                id="name"
-                                name="name"
-                                placeholder="Your name"
-                                required>
-                        </div>
-                        <div class="form-group">
-                            <label for="contactEmail">
-                                Email
-                            </label>
-                            <input
-                                type="email"
-                                id="contactEmail"
-                                name="email"
-                                placeholder="you@example.com"
-                                required>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">
-                            Message
-                        </label>
-                        <textarea
-                            id="message"
-                            name="message"
-                            rows="5"
-                            placeholder="How can we help?"
-                            required></textarea>
-                    </div>
-                    <button
-                        type="submit"
-                        class="btn btn-primary">
-                        Send message →
-                    </button>
-                </form>
-            </div>
-        </section>
-    </main>
-    <!-- =========================
-         FOOTER
-    ========================== -->
-    <footer class="site-footer">
-        <div class="container footer-top">
-            <div class="footer-brand">
-                <a href="#home" class="logo">
-                    <span class="logo-symbol">∞</span>
-                    <span class="logo-text">infiniti</span>
-                </a>
-                <p>
-                    Banking without limits.
-                </p>
-            </div>
-            <div class="footer-column">
-                <h4>Product</h4>
-                <a href="#services">Accounts</a>
-                <a href="#cards">Cards</a>
-                <a href="#services">Transfers</a>
-                <a href="#services">Insights</a>
-            </div>
-            <div class="footer-column">
-                <h4>Company</h4>
-                <a href="#about">About</a>
-                <a href="#contact">Contact</a>
-                <a href="#security">Security</a>
-            </div>
-            <div class="footer-column">
-                <h4>Support</h4>
-                <a href="#contact">Help center</a>
-                <a href="#contact">Contact us</a>
-                <a href="#security">Security</a>
-            </div>
-        </div>
-        <div class="container footer-bottom">
-            <p>
-                © 2026 Infiniti. All rights reserved.
+
             </p>
-            <div class="footer-legal">
-                <a href="#">Privacy</a>
-                <a href="#">Terms</a>
-                <a href="#">Cookies</a>
-            </div>
+
+        </form>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     LOGIN
+========================== -->
+
+<section
+    class="login-section"
+    id="login">
+
+    <div class="container login-container">
+
+        <div class="login-info">
+
+            <span class="section-tag">
+                INFINITI ACCESS
+            </span>
+
+            <h2>
+                Welcome back.
+            </h2>
+
+            <p>
+                Sign in to your Infiniti account to continue.
+            </p>
+
         </div>
-    </footer>
-    <!-- Main JavaScript -->
-    <script src="script.js"></script>
+
+
+        <form
+            class="login-form"
+            id="loginForm">
+
+            <div class="form-group">
+
+                <label for="email">
+                    Email address
+                </label>
+
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="you@example.com"
+                    autocomplete="email"
+                    required>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="password">
+                    Password
+                </label>
+
+                <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    placeholder="Enter your password"
+                    autocomplete="current-password"
+                    required>
+
+            </div>
+
+
+            <div class="form-options">
+
+                <label class="checkbox-label">
+
+                    <input
+                        type="checkbox"
+                        name="remember">
+
+                    <span>
+                        Remember me
+                    </span>
+
+                </label>
+
+                <a href="#forgot-password">
+                    Forgot password?
+                </a>
+
+            </div>
+
+
+            <button
+                type="submit"
+                class="btn btn-primary btn-full">
+
+                Sign in
+
+            </button>
+
+
+            <p style="margin-top: 18px;">
+
+                Don't have an account?
+
+                <a href="#signup">
+                    Create one
+                </a>
+
+            </p>
+
+        </form>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     CONTACT
+========================== -->
+
+<section
+    class="section contact-section"
+    id="contact">
+
+    <div class="container contact-container">
+
+        <div class="contact-content">
+
+            <span class="section-tag">
+                GET IN TOUCH
+            </span>
+
+            <h2>
+
+                We're here
+                <span>when you need us.</span>
+
+            </h2>
+
+            <p>
+
+                Have a question about Infiniti? Send us a message
+                and our team will be happy to help.
+
+            </p>
+
+        </div>
+
+
+        <form
+            class="contact-form"
+            id="contactForm">
+
+            <div class="form-row">
+
+                <div class="form-group">
+
+                    <label for="name">
+                        Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Your name"
+                        required>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="contactEmail">
+                        Email
+                    </label>
+
+                    <input
+                        type="email"
+                        id="contactEmail"
+                        name="email"
+                        placeholder="you@example.com"
+                        required>
+
+                </div>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="message">
+                    Message
+                </label>
+
+                <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    placeholder="How can we help?"
+                    required></textarea>
+
+            </div>
+
+
+            <button
+                type="submit"
+                class="btn btn-primary">
+
+                Send message →
+
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<!-- =========================
+     FOOTER
+========================== -->
+
+<footer class="site-footer">
+
+    <div class="container footer-top">
+
+        <div class="footer-brand">
+
+            <a href="#home" class="logo">
+
+                <span class="logo-symbol">
+                    ∞
+                </span>
+
+                <span class="logo-text">
+                    infiniti
+                </span>
+
+            </a>
+
+            <p>
+                Banking without limits.
+            </p>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h4>
+                Product
+            </h4>
+
+            <a href="#services">
+                Accounts
+            </a>
+
+            <a href="#cards">
+                Cards
+            </a>
+
+            <a href="#services">
+                Transfers
+            </a>
+
+            <a href="#services">
+                Insights
+            </a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h4>
+                Company
+            </h4>
+
+            <a href="#about">
+                About
+            </a>
+
+            <a href="#contact">
+                Contact
+            </a>
+
+            <a href="#security">
+                Security
+            </a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h4>
+                Support
+            </h4>
+
+            <a href="#contact">
+                Help center
+            </a>
+
+            <a href="#contact">
+                Contact us
+            </a>
+
+            <a href="#security">
+                Security
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <div class="container footer-bottom">
+
+        <p>
+            © 2026 Infiniti. All rights reserved.
+        </p>
+
+        <div class="footer-legal">
+
+            <a href="#">
+                Privacy
+            </a>
+
+            <a href="#">
+                Terms
+            </a>
+
+            <a href="#">
+                Cookies
+            </a>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- Main JavaScript -->
+<script src="script.js"></script>
+
 </body>
-</html>
+</html></html>

@@ -46,7 +46,9 @@ if (
    ========================================================= */
 
 document.addEventListener("DOMContentLoaded", () => {
-
+     
+    initSignup();
+    
     initMobileMenu();
     initSmoothScrolling();
     initActiveNavigation();
@@ -54,7 +56,6 @@ document.addEventListener("DOMContentLoaded", () => {
     initRevealAnimations();
     initButtonEffects();
     initPasswordToggle();
-    initSignup();
     initLogin();
     initContactForm();
     initAuthenticationState();

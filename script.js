@@ -54,8 +54,8 @@ document.addEventListener("DOMContentLoaded", () => {
     initRevealAnimations();
     initButtonEffects();
     initPasswordToggle();
-    initLogin();
     initSignup();
+    initLogin();
     initContactForm();
     initAuthenticationState();
     initEscapeKey();

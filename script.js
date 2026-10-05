@@ -1357,3 +1357,50 @@ function initCurrentYear() {
 console.log(
     "∞ Infiniti loaded successfully."
 );console.log("Infiniti JavaScript + Supabase loaded successfully.");}
+window.handleSignup = async function (event) {
+    event.preventDefault();
+
+    const form = document.getElementById("signupForm");
+    const name = document.getElementById("signupName").value.trim();
+    const email = document.getElementById("signupEmail").value.trim();
+    const password = document.getElementById("signupPassword").value;
+
+    if (!supabaseClient) {
+        alert("Supabase is not configured.");
+        return;
+    }
+
+    if (!name || !email || !password) {
+        alert("Please fill in all fields.");
+        return;
+    }
+
+    try {
+        const { data, error } = await supabaseClient.auth.signUp({
+            email: email,
+            password: password,
+            options: {
+                data: {
+                    full_name: name
+                }
+            }
+        });
+
+        if (error) throw error;
+
+        if (data.user) {
+            await supabaseClient
+                .from("profiles")
+                .upsert({
+                    id: data.user.id,
+                    full_name: name
+                });
+
+            alert("Account created! Check your email to confirm your account.");
+            form.reset();
+        }
+    } catch (error) {
+        console.error("Signup error:", error);
+        alert(error.message || "Signup failed.");
+    }
+};
